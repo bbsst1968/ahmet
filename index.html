@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berufskraftfahrer Ahmet</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Einbindung einer modernen Schriftart -->
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation & Hero -->
+    <header>
+
+        <div class="nav-container">
+            <div class="logo">Ahmet</div>
+            <nav>
+                <ul>
+                    <li><a href="#ueber-mich">Über mich</a></li>
+                    <li><a href="#qualifikationen">Qualifikationen</a></li>
+                    <li><a href="#erfahrung">Erfahrung</a></li>
+                    <li><a href="#kontakt" class="nav-btn">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Berufskraftfahrer Ahmet</h1>
+                <p>35 Jahre Fahrpraxis im nationalen Transportverkehr</p>
+                <a href="#kontakt" class="cta-button">Jetzt anfragen</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Über mich -->
+        <section id="ueber-mich" class="container">
+            <h2>Über mich</h2>
+            <div class="about-wrapper">
+                <!-- Hier binden Sie Ihr Foto ein -->
+                <div class="about-image">
+                    <img src="images/kochi2.jpg" alt="Berufskraftfahrer Ahmet" />
+                </div>
+                <div class="about-text">
+                    <p>Ich bin ein hoch motivierter und engagierter Berufskraftfahrer mit jahrzehntelanger Erfahrung im
+                        Lkw-Verkehr. Mein oberstes Ziel ist es, jeden Transport sicher, zuverlässig und pünktlich an
+                        sein Ziel zu bringen.</p>
+                    <p>Seit <strong>35 Jahren fahre ich in Deutschland</strong> im nationalen Verkehr. Diese tiefe
+                        Praxis
+                        macht mich zu einem Experten für anspruchsvolle Fahrten und Logistikaufgaben.</p>
+                    <p>Meine Arbeitsweise zeichnet sich durch absolute Pünktlichkeit, Gewissenhaftigkeit und besondere
+                        Sorgfalt mit der Ladung aus.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Qualifikationen -->
+        <section id="qualifikationen" class="bg-light">
+            <div class="container">
+                <h2>Qualifikationen</h2>
+                <div class="grid-cards">
+                    <div class="card">
+                        <h3>Führerschein</h3>
+                        <p>Klassen: <strong>CE, C</strong></p>
+                    </div>
+                    <div class="card">
+                        <h3>Schlüsselzahl</h3>
+                        <p><strong>95</strong> (BKrFQG)</p>
+                    </div>
+                    <div class="card">
+                        <h3>Gefahrgut</h3>
+                        <p>Gültiger <strong>ADR-Schein Endet: 31.12.2026</strong></p>
+                    </div>
+                    <div class="card">
+                        <h3>Flurförderzeug</h3>
+                        <p><strong>Staplerschein</strong> vorhanden</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Erfahrung -->
+        <section id="erfahrung" class="container">
+            <h2>Erfahrung & Fahrpraxis</h2>
+            <div class="experience-flex">
+                <div class="exp-block">
+                    <h3>Fahrtypen</h3>
+                    <ul>
+                        <li>Sattelzug</li>
+                        <li>Kühler</li>
+                        <li>Plane</li>
+                        <li>Baustellenverkehr</li>
+                    </ul>
+                </div>
+                <div class="exp-block">
+                    <h3>Fahrpraxis</h3>
+                    <ul>
+                        <li>Fernverkehr national</li>
+                        <li>Fernverkehr international</li>
+                        <li>Nahverkehr</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- YouTube Video Bereich -->
+        <section id="videos" class="container">
+            <h2>Videos & Impressionen</h2>
+            <p class="video-sub">Hier sehen Sie mich im Einsatz oder Einblicke aus meinem Berufsalltag.</p>
+
+            <div class="video-responsive-container">
+                <!-- Ersetzen Sie den Code nach 'embed/' mit Ihrer eigenen Video-ID -->
+                <iframe src="https://youtube.com" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+
+        <!-- Kontakt -->
+        <section id="kontakt" class="bg-light">
+            <div class="contact-box">
+                <h2>Kontakt aufnehmen</h2>
+                <p class="contact-sub">Suchen Sie einen zuverlässigen Fahrer? Schreiben Sie mir eine Nachricht.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Ihr Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-Mail</label>
+                        <input type="email" id="email" name="email" required placeholder="ihre@email.de">
+                    </div>
+                    <div class="form-group">
+                        <label for="nachricht">Nachricht</label>
+                        <textarea id="nachricht" name="nachricht" required
+                            placeholder="Ihre Nachricht an mich..."></textarea>
+                    </div>
+                    <!-- Die neue Datenschutz-Checkbox -->
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="datenschutz-check" name="datenschutz" required>
+                        <label for="datenschutz-check">
+                            Ich habe die <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a> gelesen und
+                            akzeptiere diese. *
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Nachricht senden</button>
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Ahmet. Alle Rechte vorbehalten. | Berufskraftfahrer</p>
+            <div class="footer-links">
+                <a href="impressum.html">Impressum</a> |
+                <a href="datenschutz.html">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Eleganter Musik-Player unten rechts -->
+    <div class="audio-box">
+        <button id="music-toggle-btn" class="music-btn">🎵 Musik einschalten</button>
+        <!-- Ersetzen Sie 'mein-song.mp3' mit Ihrer echten Musikdatei -->
+        <audio id="bg-audio" src="audio/bodrum.mp3" loop></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
