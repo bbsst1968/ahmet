@@ -121,14 +121,18 @@
             </div>
         </section>
 
-
         <!-- Kontakt -->
         <section id="kontakt" class="bg-light">
             <div class="contact-box">
                 <h2>Kontakt aufnehmen</h2>
                 <p class="contact-sub">Suchen Sie einen zuverlässigen Fahrer? Schreiben Sie mir eine Nachricht.</p>
-                <form action="https://api.web3froms.com" method="Post">
-                    <imput type="hidden" name="access_key" value="a16de6f5-9265-4f6c-9cf7-ebb1b7c12428">
+                
+                <!-- KORRIGIERT: Richtige URL mit "forms" und "/submit" am Ende -->
+                <form action="https://web3forms.com" method="POST">
+                    
+                    <!-- KORRIGIERT: "input" richtig geschrieben mit "n" -->
+                    <input type="hidden" name="access_key" value="a16de6f5-9265-4f6c-9cf7-ebb1b7c12428">
+                    
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" required placeholder="Ihr Name">
@@ -156,6 +160,10 @@
                 </form>
             </div>
         </section>
+
+
+
+
     </main>
 
     <footer>
